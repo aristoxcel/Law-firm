@@ -35,7 +35,7 @@ export default function Banner() {
           <div className="mt-4 flex justify-center">
             {" "}
             <Link href={"/"}>
-              <button className="group  font-bold relative flex w-48 items-center rounded-lg  border-primary p-4 text-secondary">
+              <button className="group  font-bold relative flex w-48 items-center rounded-lg border-2 border-primary p-4 text-secondary">
                 <span>Free Consultation</span>
                 <span className="absolute right-3 box-content flex w-1/6 justify-center rounded-md bg-primary duration-300 group-hover:w-[87%]">
                   <svg
@@ -63,12 +63,12 @@ export default function Banner() {
         </div>
 
         {/* Red Box */}
-        <div className="absolute bottom-4 bg-red-500 shadow-lg left-4  lg:left-0 lg:bottom-0  md:flex md:justify-center  lg:w-1/2">
+        <div className="absolute bottom-4 bg-red-500 shadow-lg left-4  lg:left-0 lg:bottom-0  md:flex md:justify-center lg:w-[50%] xl:w-[45% ]">
        
           <div className="flex justify-end items-end w-full">
           <div className="flex items-center gap-3 lg:gap-6 pr-12 py-8  ">
             {/* Round Image */}
-          <div className="w-28 h-28 rounded-full overflow-hidden">
+          <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-y-gray-300">
               <Image
                 src={pic}
                 alt="Profile"
@@ -76,7 +76,7 @@ export default function Banner() {
               />
             </div> 
             {/* Comments */}
-            <div className="ml-10 bg-gradient-to-r from-black via-[#5d5f74] to-black 
+            <div className="ml-10 bg-gradient-to-r from-gray-500 via-white to-white 
                bg-clip-text text-transparent">
               <p className="text-xl lg:text-3xl font-bold font-playFair  ">Adv. Mohammad Mohsin</p>
               <p className="text-sm lg:text-base font-medium text-right">M.A, LLB, LL.M</p>

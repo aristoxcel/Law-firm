@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../../public/assets/logo.png";
+import logo from "../../../public/assets/lg.svg";
 import { useEffect, useState } from "react";
 
 function Navbar() {
@@ -58,14 +58,14 @@ function Navbar() {
     >
       <div className="container mx-auto navbar">
         <div className="navbar-start ">
-          <Link href={"/"} className="flex flex-row gap-2 items-center">
+          <Link href={"/"}>
             <Image
               src={logo}
               alt="logo"
+              height={70}
               width={70}
-              height={60}
-              className="rounded-full border-2 border-primary border-t-green-600"
-            ></Image> <h2 className="text-secondary">Mohsin Law & Tax House</h2>
+              className="bg-transparent my-[-30]"
+            ></Image> 
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
