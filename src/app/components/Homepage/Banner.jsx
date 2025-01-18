@@ -16,15 +16,13 @@ export default function Banner() {
       />
       <div className="absolute inset-0 bg-gray-900/50 flex justify-center items-center">
         <div className="text-center p-6">
-          <h3 className="text-2xl text-gray-300 font-normal  font-pacific  lg:text-4xl">
+          <h3 className="text-2xl text-gray-200/70  font-roboto  lg:text-4xl">
             Professional Lawyers
           </h3>
-
-          <br />
-          <h1 className="text-3xl font-medium  text-white lg:text-7xl">
+          <h1 className="text-3xl font-bold font-playFair  text-white lg:text-7xl">
             We Will Fight
           </h1>
-          <h1 className="text-3xl font-medium  text-white lg:text-7xl">
+          <h1 className="text-3xl font-bold font-playFair text-white lg:text-7xl">
             For You Like A Friend
           </h1>
           <br />
@@ -32,9 +30,9 @@ export default function Banner() {
           <div className="mt-4 flex justify-center">
             {" "}
             <Link href={"/"}>
-              <button className="group  font-bold relative flex w-36 items-center rounded-lg border-2 border-primary p-4 text-secondary">
-                <span>Explore All</span>
-                <span className="absolute right-3 box-content flex w-1/6 justify-center rounded-md bg-primary duration-300 group-hover:w-5/6">
+              <button className="group  font-bold relative flex w-48 items-center rounded-lg border-2 border-primary p-4 text-secondary">
+                <span>Free Consultation</span>
+                <span className="absolute right-3 box-content flex w-1/6 justify-center rounded-md bg-primary duration-300 group-hover:w-[87%]">
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
@@ -72,12 +70,15 @@ export default function Banner() {
             </div>
             {/* Comments */}
             <div className="ml-10">
-              <p className="text-sm font-medium">Md. asfdkjfljsdaf sdjafk</p>
-              <p className="text-sm font-medium">"Highly recommended."</p>
-              <p className="text-sm font-medium">Contact: 4893279824312</p>
+              <p className="text-sm font-medium font-roboto">Advocate Mohammad Mohsin</p>
+              <p className="text-sm font-medium">M.A, LLB, LL.M</p>
+              <p className="text-sm font-medium">Joj Court, Dhaka</p>
+              <p className="text-sm font-medium">Expert On Civil, Criminal And Income Tax</p>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   );

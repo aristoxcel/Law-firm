@@ -57,15 +57,15 @@ function Navbar() {
       }`}
     >
       <div className="container mx-auto navbar">
-        <div className="navbar-start">
-          <Link href={"/"}>
+        <div className="navbar-start ">
+          <Link href={"/"} className="flex flex-row gap-2 items-center">
             <Image
               src={logo}
               alt="logo"
               width={70}
               height={60}
               className="rounded-full border-2 border-primary border-t-green-600"
-            ></Image>
+            ></Image> <h2 className="text-secondary">Mohsin Law & Tax House</h2>
           </Link>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -82,7 +82,7 @@ function Navbar() {
         </div>
 
         <div className="navbar-end text-secondary">
-          <a className="btn btn-primary">Appointment</a>
+          <a className="btn btn-primary px-8 font-playFair">Free Consultation</a>
         </div>
       </div>
     </div>
