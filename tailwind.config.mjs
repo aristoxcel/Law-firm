@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -13,5 +13,17 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: [
+      {
+        mytheme:{
+          "primary":"#da0000",
+          "secondary":"#ffffff",
+          "accent":"#2b2e4a",
+        },
+      }, "dark", "cupcake"],
+  },
 };
