@@ -1,3 +1,5 @@
+
+
 import banner from "../../../public/assets/images/banner.jpg";
 import pic from "../../../public/assets/images/pic.png";
 
@@ -5,6 +7,9 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Banner() {
+
+  const titles = ["Civil", "Criminal", "Income Tax"];
+
   return (
     <div className="w-full bg-center bg-cover min-h-[calc(100vh-1px)]">
       <Image
@@ -58,25 +63,36 @@ export default function Banner() {
         </div>
 
         {/* Red Box */}
-        <div className="absolute bottom-4 left-4 lg:left-0 lg:bottom-0  md:flex md:justify-center">
-          <div className="flex items-center bg-red-500 text-white pl-48 pr-12 py-8  shadow-lg lg:w-auto w-3/4">
+        <div className="absolute bottom-4 bg-red-500 shadow-lg left-4  lg:left-0 lg:bottom-0  md:flex md:justify-center lg:w-[50%] xl:w-[45% ]">
+       
+          <div className="flex justify-end items-end w-full">
+          <div className="flex items-center gap-3 lg:gap-6 pr-12 py-8  ">
             {/* Round Image */}
-            <div className="w-28 h-28 rounded-full overflow-hidden">
+          <div className="w-40 h-40 rounded-full overflow-hidden border-2 border-y-gray-300">
               <Image
                 src={pic}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />
-            </div>
+            </div> 
             {/* Comments */}
-            <div className="ml-10">
-              <p className="text-sm font-medium font-roboto">Advocate Mohammad Mohsin</p>
-              <p className="text-sm font-medium">M.A, LLB, LL.M</p>
-              <p className="text-sm font-medium">Joj Court, Dhaka</p>
-              <p className="text-sm font-medium">Expert On Civil, Criminal And Income Tax</p>
+            <div className="ml-10 bg-gradient-to-r from-gray-500 via-white to-white 
+               bg-clip-text text-transparent">
+              <p className="text-xl lg:text-3xl font-bold font-playFair  ">Adv. Mohammad Mohsin</p>
+              <p className="text-sm lg:text-base font-medium text-right">M.A, LLB, LL.M</p>
+              <div className="flex items-center justify-end">
+            <span className="h-2 w-2 rounded-full bg-secondary animate-ping"></span>
+            <span className="h-2 w-2 rounded-full bg-secondary"></span>
+            <p className="text-sm lg:text-base font-bold  ml-2">Dhaka Joj Court</p>
+          </div>
+              <div className="text-sm lg:text-base font-medium text-right">
+              <span className="typewriter ">Expert On {titles.join(" | ")}</span>
+              </div>
             </div>
           </div>
-        </div>
+          </div>
+          
+        </div>  
 
 
       </div>
